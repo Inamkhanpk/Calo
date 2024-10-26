@@ -3,11 +3,7 @@ import JobList from "../components/JobList";
 import CreateJob from "../components/CreateJob";
 import { useState } from "react";
 import { useNetwork } from "../hooks/useNetwork";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(useGSAP, TextPlugin);
 export default function Home() {
   const [jobCreated, setJobCreated] = useState(null);
 
